@@ -1,0 +1,482 @@
+{
+	"id": "1656bf26-e13a-ee11-b8f0-000d3a64eb39",
+	"createdAt": "2023-08-14T20:28:51.793Z",
+	"createdBy": "paulo.reis.rosa@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "08a75274-953a-4499-da73-db6a0a89def8",
+			"fieldName": "Wrapper",
+			"fieldParent": 0,
+			"fieldType": "sap.m.VBox",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "renderType",
+					"grouping": "Properties",
+					"value": "Bare",
+					"script": "",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "13c8166c-912d-43d5-cf96-c471a0eaf4e7",
+					"fieldName": "Content",
+					"fieldParent": "08a75274-953a-4499-da73-db6a0a89def8",
+					"fieldType": "sap.ui.core.HTML",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "a2b8d597-0b10-44b4-a890-33a5406fe0b8",
+					"fieldName": "OptionsBuilder",
+					"fieldParent": "08a75274-953a-4499-da73-db6a0a89def8",
+					"fieldType": "sap.m.Button",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "visible",
+							"grouping": "Properties",
+							"value": "false",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "ed592ffc-dc24-4f50-c301-90cf3d12ff89",
+					"fieldName": "README.1ST",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/README.1ST.js",
+					"customComponent": false,
+					"disabled": true,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "f953d849-a8f0-4024-859d-48f041a20d29",
+					"fieldName": "namespace",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Typescript",
+					"script": "file://script/neptune.Typescript/namespace.ts",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": {
+		"icon": "data:image/png;base64,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",
+		"documentation": "<h1>Monaco Editor Cust. Comp. (ccmonacoeditor)</h1><p>This custom component is based on Microsoft's Monaco Editor. Please check this site as reference for its capabilities:<span style=\"color: rgb(0, 85, 255);\">&nbsp;</span><a target=\"_blank\" href=\"https://microsoft.github.io/monaco-editor/\" alt=\"https://microsoft.github.io/monaco-editor/\"><span style=\"color: rgb(0, 85, 255);\">https://microsoft.github.io/monaco-editor/</span></a> (opens in a new window).</p><p>It can be used inside any kind of container (e.g.: page, panel, dialog, etc) and it runs both in standalone and together with a launchpad.</p><h2>Launchpad setup</h2><p>Add the following lines on the launchpad's header:</p><pre style=\"margin-left: 25px;\"><span style=\"color: rgb(0, 0, 0);\">&lt;</span><strong><span style=\"color: rgb(0, 0, 0);\">script</span></strong><span style=\"color: rgb(0, 0, 0);\">&gt;</span><strong><span style=\"color: rgb(0, 51, 153);\">var </span></strong><span style=\"color: rgb(0, 51, 153);\">require</span><span style=\"color: rgb(0, 0, 0);\">={</span><span style=\"color: rgb(0, 51, 153);\">paths</span><span style=\"color: rgb(0, 0, 0);\">:{</span><span style=\"color: rgb(71, 102, 0);\">'vs'</span><span style=\"color: rgb(0, 0, 0);\">:</span><span style=\"color: rgb(71, 102, 0);\">'/public/monaco/min/vs'</span><span style=\"color: rgb(0, 0, 0);\">}};&lt;/</span><strong><span style=\"color: rgb(0, 0, 0);\">script</span></strong><span style=\"color: rgb(0, 0, 0);\">&gt;&lt;</span><strong><span style=\"color: rgb(0, 0, 0);\">script </span></strong><span style=\"color: rgb(152, 0, 0);\">src</span><span style=\"color: rgb(0, 0, 0);\">=</span><span style=\"color: rgb(71, 102, 0);\">\"/public/monaco/min/vs/loader.js\"</span><span style=\"color: rgb(0, 0, 0);\">&gt;&lt;/</span><strong><span style=\"color: rgb(0, 0, 0);\">script</span></strong><span style=\"color: rgb(0, 0, 0);\">&gt;</span><br></pre><h2>Quick start</h2><p>Use these steps to have a quick and running javascript code editor for your app:</p><ol><li>Add the component to your project and give it a unique name (e.g.: Editor);</li><li>Set the <strong>height</strong> and the&nbsp;<strong>width</strong> properties to \"100%\";</li><li>Open a javascript code tab for the&nbsp;<span style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\"><strong>monacoOptionsBuilder </strong>initialization event and add the following code:</span></li></ol><pre style=\"margin-left: 50px;\"><span style=\"font-family: &quot;Courier New&quot;;\"><strong><span style=\"color: rgb(0, 51, 153);\">return&nbsp;</span></strong><span style=\"color: rgb(0, 0, 0);\">{</span><br><span style=\"color: rgb(0, 0, 0);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: rgb(0, 51, 153);\">value</span><span style=\"color: rgb(0, 0, 0);\">:&nbsp;</span></span><span style=\"font-family: &quot;Courier New&quot;; color: rgb(71, 102, 0);\">'/*&nbsp;this is a javascript editor&nbsp;*/\\n'</span><span style=\"color: rgb(0, 0, 0); font-family: &quot;Courier New&quot;;\">,</span><br><span style=\"font-family: &quot;Courier New&quot;;\"><span style=\"color: rgb(0, 0, 0);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: rgb(0, 51, 153);\">language</span><span style=\"color: rgb(0, 0, 0);\">:&nbsp;</span></span><span style=\"font-family: &quot;Courier New&quot;; color: rgb(71, 102, 0);\">'javascript'</span><span style=\"color: rgb(0, 0, 0); font-family: &quot;Courier New&quot;;\">,</span><br><span style=\"font-family: &quot;Courier New&quot;;\"><span style=\"color: rgb(0, 0, 0);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: rgb(0, 51, 153);\">lineNumbers</span><span style=\"color: rgb(0, 0, 0);\">:&nbsp;</span></span><span style=\"font-family: &quot;Courier New&quot;; color: rgb(71, 102, 0);\">\"on\"</span><span style=\"color: rgb(0, 0, 0); font-family: &quot;Courier New&quot;;\">,</span><br><span style=\"font-family: &quot;Courier New&quot;;\"><span style=\"color: rgb(0, 0, 0);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: rgb(0, 51, 153);\">automaticLayout</span><span style=\"color: rgb(0, 0, 0);\">:&nbsp;true,</span></span><br><span style=\"font-family: &quot;Courier New&quot;;\"><span style=\"color: rgb(0, 0, 0);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: rgb(0, 51, 153);\">scrollBeyondLastLine</span><span style=\"color: rgb(0, 0, 0);\">:&nbsp;true,</span></span><br><span style=\"font-family: &quot;Courier New&quot;;\"><span style=\"color: rgb(0, 0, 0);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: rgb(0, 51, 153);\">readOnly</span><span style=\"color: rgb(0, 0, 0);\">:&nbsp;false,</span></span><br><span style=\"font-family: &quot;Courier New&quot;;\"><span style=\"color: rgb(0, 0, 0);\">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style=\"color: rgb(0, 51, 153);\">theme</span><span style=\"color: rgb(0, 0, 0);\">:&nbsp;</span></span><span style=\"color: rgb(71, 102, 0);\"><span style=\"font-family: &quot;Courier New&quot;;\">\"vs-dark\"</span></span><span style=\"color: rgb(0, 0, 0); font-family: &quot;Courier New&quot;;\">,</span><br><span style=\"color: rgb(0, 0, 0); font-family: &quot;Courier New&quot;;\">}</span></pre><div>Please note that:</div><ul><li>the property <strong>autoInit</strong> is defaulted to true - that's the reason why the editor will be created automatically with the example above;</li><li>if you want to create the code editor manually through the <strong>initEditor </strong>method, then you need to set <em><strong>autoInit: false</strong></em>;</li><li>whatever settings you use, it's important that you include <em><strong>automaticLayout: true</strong></em> to make it responsive, otherwise the editor will stay with the same dimensions as it initially started;</li><li>you can look for more valid options in the Monaco Editor's official documentation</li></ul><h2>Attributes</h2><p>The attributes are divided in the groups:</p><ul><li>Properties (Designer &amp; Runtime)<br><ul><li>these attributes usually have a direct impact on the component's behavior or presentation;</li><li>they're usually accessed through getters and setters on runtime;</li></ul></li><li>OnInit (Designer)<ul><li>these are methods called only during the initialization phase of the custom component</li></ul></li><li>Runtime methods (Runtime)<ul><li>These are methods specific to the custom component that are only available from the runtime</li><li>It excludes inherited methods (e.g.: getters and setters)</li></ul></li></ul><h3>Properties</h3><ul><li>autoInit: <em>boolean</em><ul><li>On true, the monaco editor is automatically created as soon as the html rendering is completed. It uses the OnInit/monacoOptionsBuilder to acquire the options used for its creation;</li><li>It is a read-only property (does not have a getter/setter);</li></ul></li><li>busy: <em>boolean</em><ul><li>same as in the sap.ui.core.Control busy property, getter and setter;</li></ul></li><li>busyIndicatorDelay: <em>number</em><br><ul><li><span style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\">same as in the sap.ui.core.Control busyIndicatorDelay property, getter and setter;</span>​</li></ul></li><li>busyIndicatorSize:&nbsp;<em>sap.ui.core.BusyIndicatorSize</em><ul><li><span style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\">same as in the sap.ui.core.Control busyIndicatorSize property, getter and setter;</span>​</li></ul></li><li>height:&nbsp;<em>sap.ui.core.CSSSize</em><ul><li>same as in the&nbsp;sap.m.FlexBox height property, getter and setter;</li></ul></li><li>width:&nbsp;<em>sap.ui.core.CSSSize</em><ul><li style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; display: list-item; text-align: -webkit-match-parent; margin-bottom: 5px;\">same as in the&nbsp;sap.m.FlexBox width property, getter and setter;</li></ul></li><li>preferDOM: <em>boolean</em><ul><li>same as in the&nbsp;sap.ui.core.HTML preferDOM property, getter and setter;</li></ul></li><li>styleClass, styleClassMargin and&nbsp;styleClassVisibility: <em>String</em><ul><li>these 3 properties work in the same way as the counterparts of any UI5 element in the Neptune DXP Designer;</li><li>they can be maintained during runtime through the hasStyleClass, addStyleClass and removeStyleClass methods;</li></ul></li><li>visible: <em>boolean</em><ul><li>same as in the sap.ui.core.Control visible property, getter and setter.<br></li></ul></li></ul><h3>OnInit</h3><ul><li>​monacoOptionsBuilder<br></li></ul><h3>Runtime methods</h3><p>This list does not refer to the properties getters and setters, as well as the style class methods. It is only related to the this component's specific methods.</p><ul><li style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; color: inherit; display: list-item; text-align: -webkit-match-parent; margin-bottom: 5px;\">onLoad():&nbsp;<em style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; color: inherit;\">Promise&lt;empty&gt;</em><br style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; color: inherit;\"><ul style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; color: inherit; list-style-position: outside; display: block; margin-block: 1em; margin-inline: 0px; padding-inline-start: 40px; list-style-type: circle; margin: 0px;\"><li style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; color: inherit; display: list-item; text-align: -webkit-match-parent; margin-bottom: 5px;\">It is fulfilled after the component is first rendered</li></ul></li><li>onEditorCreated(): <em>Promise&lt;empty&gt;</em><br><ul><li>It is fulfilled when the editor is first created (either through initEditor or if the autoInit property is set to <em>true</em>)</li></ul></li><li>initEditor(): <em>Promise&lt;monaco.editor&gt;</em><br><ul><li>It creates the monaco editor and resolves returning the created instance;</li><li style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; display: list-item; text-align: -webkit-match-parent; margin-bottom: 5px;\"><strong style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">monacoOptionsBuilder</strong><strong>setMonacoOptions</strong>It reads the properties for the initialization either from&nbsp;&nbsp;or ;</li><li>If the editor exists already, then returns it directly through the promise without reading the properties or trying to create an editor instance;</li></ul></li><li>getValue(): <em>String</em><ul><li>Gets the value of the editor's contents if the editor is created, or of the field '<span style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\">value'&nbsp;</span>of monacoOptions otherwise;</li><li>It can be used safely, even if the editor doesn't exist;</li></ul></li><li>setValue( sValue: <em>Any&nbsp;</em>): <em>void</em><ul><li>sValue is always converted to String using the following rules:<ul><li>undefine becomes '';<br></li><li>null becomes '';</li><li>all other values are the result of String(sValue);</li></ul></li><li>Sets the contents of the editor if it exists, or the&nbsp;<span style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\">of the field '</span><span style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: &quot;Helvetica Neue&quot;; font-size: 13px; vertical-align: baseline; margin: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\">value'&nbsp;</span><span style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\">of monacoOptions otherwise</span>;</li><li style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; display: list-item; text-align: -webkit-match-parent; margin-bottom: 5px;\">It can be used safely, even if the editor doesn't exist:<ul><li style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; display: list-item; text-align: -webkit-match-parent; margin-bottom: 5px;\">In case it exists, it affects the editor's contents immediately;</li><li style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: inherit; font-size: inherit; display: list-item; text-align: -webkit-match-parent; margin-bottom: 5px;\">otherwise it will store it in monacoOptions and read when the editor is created;</li></ul></li></ul></li><li>getLineCount(): <em>number </em>| <em>NaN</em><br><ul><li>Returns the total of line numbers within the editor</li><li>If the editor is not yet created, then it will return the total of lines on the text meant to be used during its initialization (if it is defined)<ul><li>If no valid text is found, then there is no guarantee that it returns a number</li></ul></li></ul></li><li>getMonacoEditor(): <em>null </em>|&nbsp;<em style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">monaco.editor</em><br><ul><li>Returns the editor object if it exists;</li><li>Can be used to check whether the editor was created or not;</li></ul></li><li>getMonacoOptions(): object<br><ul><li>Returns the options for a monaco code editor creation;</li><li>Note that this value can be set even after the code editor has been created, so it is not guaranteed to be the same options used to create an already existing one;</li></ul></li><li>setMonacoOptions(oMonacoOptions: <em>object</em>): <em>void</em><br><ul><li>Sets the monaco editor initialization options;</li><li>Use it before calling <strong>initEditor</strong>, if no options were set through <strong style=\"-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-size-adjust: none; box-sizing: border-box; -webkit-user-drag: none; overflow: visible; font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">monacoOptionsBuilder</strong>&nbsp;or if you wish to change them before creating the editor.</li></ul></li></ul><h2>Technical information</h2><p>This component is comprised of three UI5 objects:&nbsp;</p><ul><li>[ROOT] sap.m.VBox called <strong>Wrapper</strong>: {<em>renderType: 'Bare'</em>}<ul><li>sap.ui.core.HTML called <strong>Content</strong></li><li>sap.m.Button called&nbsp;<strong>OptionsBuilder</strong>: {<em>visible: false</em>}</li></ul></li></ul><p>When applied to an application, these components will respectively add the suffixes _Wrapper, _Content and _OptionsBuilder to the instance.</p><p>For example, if I want to create a javascript code editor called <strong>JsEditor </strong>on my app based on this component (ccmonacoeditor), then the app will generate an sap.m.VBox called <strong>JsEditor_Wrapper,</strong> an sap.ui.core.HTML calles <strong>JsEditor_Content</strong> and an sap.m.Button called <strong>JsEditor_OptionsBuilder</strong>. All these components are part of my <strong>JsEditor</strong>.</p><p><strong>Important notes:</strong>&nbsp;</p><ul><li>The object <strong>JsEditor </strong>exists, but it is in fact the namespace related to this ccmonacoeditor instance I have on my app. <strong>You will only need to use JsEditor throughout your development</strong>;</li><li>When used together with a Launchpad, all the ids will have the prefix of the view (e.g.: __jsview1--JsEditor_Wrapper);</li><li>You <strong>cannot</strong>&nbsp;use&nbsp;<em>sap.n.getObjectByID('JsEditor')</em> or <em>sap.ui.getCore().byId('__</em><span style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\"><em>jsview1--JsEditor</em></span><em>')</em> to acquire the namespace JsEditor - it is not an UI5 object.<br></li></ul><p>Use the <strong>Wrapper </strong>to define the dimensions of the component in your app (it's actually mapped to JsEditor-height and JsEditor-width).</p><p>The <strong>Content </strong>is initialized as a <em>div</em>&nbsp;with the same id&nbsp; as <em>Content.getId()</em> (e.g.:&nbsp;<span style=\"font-family: &quot;Helvetica Neue&quot;; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;\">__jsview1--JsEditor_Content) and occupies 100% height and width&nbsp;</span>of its parent.</p><p>The <strong>OptionsBuilder</strong> is only used to hold the code for <strong>monacoOptionsBuilder</strong>. The code is mapped to the button's press event.</p>",
+		"containerId": null,
+		"attributes": [
+			{
+				"id": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"objectType": "group",
+				"attribute": {
+					"ATTRIBUTE": "Properties",
+					"GROUPING": ""
+				}
+			},
+			{
+				"id": "e7456553-f09c-4788-9759-0610d0e90e2a",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "visible",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "visible",
+					"VALUE_TABLE": 1,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "true",
+					"ENABLE_VALUES": true,
+					"VALUEHELPONLY": true,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true
+				},
+				"fieldType": "sap.m.VBox"
+			},
+			{
+				"id": "e8104492-4f12-4d9e-aee2-d1757a307b80",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "width",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "width",
+					"VALUE_TABLE": 0,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "",
+					"ENABLE_VALUES": false,
+					"VALUEHELPONLY": false,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true
+				},
+				"fieldType": "sap.m.VBox"
+			},
+			{
+				"id": "084356fe-83f4-4c69-9ba9-da6de578a071",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "height",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "height",
+					"VALUE_TABLE": 0,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "",
+					"ENABLE_VALUES": false,
+					"VALUEHELPONLY": false,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true
+				},
+				"fieldType": "sap.m.VBox"
+			},
+			{
+				"id": "ccfd4155-6865-4a12-dff4-d0e1a5536dd3",
+				"objectType": "attribute",
+				"fieldId": "13c8166c-912d-43d5-cf96-c471a0eaf4e7",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "preferDOM",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "13c8166c-912d-43d5-cf96-c471a0eaf4e7",
+					"ATTRIBUTE": "preferDOM",
+					"VALUE_TABLE": 1,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "true",
+					"ENABLE_VALUES": true,
+					"VALUEHELPONLY": true,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true
+				},
+				"fieldType": "sap.ui.core.HTML"
+			},
+			{
+				"id": "74dc5595-946e-4a99-d877-bc8ded2ba8a0",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "styleClass",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "styleClass",
+					"VALUE_TABLE": 0,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "",
+					"ENABLE_VALUES": false,
+					"VALUEHELPONLY": false,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true,
+					"SHOW_BUTTON": false
+				},
+				"fieldType": "sap.m.VBox",
+				"append": true
+			},
+			{
+				"id": "b7cbb3ce-4e2c-4bd9-9991-be2ba6d7dcaf",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "styleClassMargin",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "styleClassMargin",
+					"VALUE_TABLE": 416,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "",
+					"ENABLE_VALUES": true,
+					"VALUEHELPONLY": true,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true,
+					"SHOW_BUTTON": false
+				},
+				"fieldType": "sap.m.VBox"
+			},
+			{
+				"id": "6500a920-1839-4341-f69b-01563c9d6a66",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "styleClassVisibility",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "styleClassVisibility",
+					"VALUE_TABLE": 371,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "",
+					"ENABLE_VALUES": true,
+					"VALUEHELPONLY": true,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true,
+					"SHOW_BUTTON": false
+				},
+				"fieldType": "sap.m.VBox"
+			},
+			{
+				"id": "ddb8e6f8-f63b-4e36-9232-f9c2f94ea28a",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "busy",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "busy",
+					"VALUE_TABLE": 1,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": false,
+					"ENABLE_VALUES": true,
+					"VALUEHELPONLY": true,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true
+				},
+				"fieldType": "sap.m.VBox"
+			},
+			{
+				"id": "d89a3f7c-4227-4896-c6b0-21b7ae543436",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "busyIndicatorDelay",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "busyIndicatorDelay",
+					"VALUE_TABLE": 0,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": 1000,
+					"ENABLE_VALUES": false,
+					"VALUEHELPONLY": false,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true
+				},
+				"fieldType": "sap.m.VBox"
+			},
+			{
+				"id": "89018753-8329-495d-ad94-e090afd7ee22",
+				"objectType": "attribute",
+				"fieldId": "08a75274-953a-4499-da73-db6a0a89def8",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "busyIndicatorSize",
+					"GROUPING": "Properties",
+					"PARENT": "Properties"
+				},
+				"original": {
+					"FIELD_ID": "08a75274-953a-4499-da73-db6a0a89def8",
+					"ATTRIBUTE": "busyIndicatorSize",
+					"VALUE_TABLE": "441",
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "Medium",
+					"ENABLE_VALUES": true,
+					"VALUEHELPONLY": true,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true
+				},
+				"fieldType": "sap.m.VBox"
+			},
+			{
+				"id": "35e198d8-6e7f-4f14-a8df-87324fab4db7",
+				"objectType": "attribute",
+				"fieldId": "13c8166c-912d-43d5-cf96-c471a0eaf4e7",
+				"parent": "8af5b9aa-b9cb-493a-d31e-ba4645f97269",
+				"attribute": {
+					"ATTRIBUTE": "autoInit",
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"DESCRIPTION": "Is the editor created automatically (true) or through code (false)?"
+				},
+				"original": {
+					"FIELD_ID": "13c8166c-912d-43d5-cf96-c471a0eaf4e7",
+					"ATTRIBUTE": "visible",
+					"VALUE_TABLE": 1,
+					"GROUPING": "Properties",
+					"PARENT": "Properties",
+					"SHOW_LABEL": false,
+					"DEFAULT": "true",
+					"ENABLE_VALUES": true,
+					"VALUEHELPONLY": true,
+					"SCRIPT_ICON": "sap-icon://connected",
+					"SHOW_SCRIPT": false,
+					"ENABLE_SCRIPT": true
+				},
+				"fieldType": "sap.ui.core.HTML"
+			},
+			{
+				"id": "7ce5ab66-79c2-4d47-a99b-95ccbb188ca3",
+				"objectType": "group",
+				"attribute": {
+					"ATTRIBUTE": "OnInit",
+					"GROUPING": ""
+				}
+			},
+			{
+				"id": "cf0a35ef-c6bc-494a-b4a7-c1c1989ea401",
+				"objectType": "attribute",
+				"fieldId": "a2b8d597-0b10-44b4-a890-33a5406fe0b8",
+				"parent": "7ce5ab66-79c2-4d47-a99b-95ccbb188ca3",
+				"attribute": {
+					"ATTRIBUTE": "monacoOptionsBuilder",
+					"GROUPING": "OnInit",
+					"PARENT": "OnInit",
+					"DESCRIPTION": "return { language: 'javascript', ... } /* valid Monaco Editor's options. Only used during initialization. Required if autoInit is true. */"
+				},
+				"original": {
+					"FIELD_ID": "a2b8d597-0b10-44b4-a890-33a5406fe0b8",
+					"ATTRIBUTE": "press",
+					"VALUE_TABLE": 0,
+					"GROUPING": "Events",
+					"PARENT": "Events",
+					"SHOW_LABEL": false,
+					"DEFAULT": "",
+					"ENABLE_VALUES": false,
+					"VALUEHELPONLY": false,
+					"SCRIPT_ICON": "sap-icon://document-text",
+					"SHOW_SCRIPT": true,
+					"ENABLE_SCRIPT": false
+				},
+				"fieldType": "sap.m.Button"
+			}
+		],
+		"containers": [],
+		"topLevelObjects": [
+			"sap.m.VBox"
+		]
+	},
+	"ver": "24.02.13.1822",
+	"application": "ccmonacoeditor",
+	"title": "MonacoEditor",
+	"description": "Code editor that can be added to an application. It requires the monaco editor library (shipped with Open Edition)",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "E",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "file:///header.html",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [],
+	"package": "90d564a2-96ca-ee11-85f9-000d3a663351"
+}

@@ -1,0 +1,51 @@
+{
+	"id": "90d564a2-96ca-ee11-85f9-000d3a663351",
+	"createdAt": "2024-02-13T17:38:02.360Z",
+	"createdBy": "paulo.reis.rosa@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/Paulo-Reis-Rosa/p9-ccmonacoeditor"
+	},
+	"name": "legacy_ccmonacoeditor",
+	"description": "legacy custom component for the monaco editor (supports Open Edition DXP pre-v23)",
+	"ver": "24.02.13.1821",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "1656bf26-e13a-ee11-b8f0-000d3a64eb39",
+			"application": "ccmonacoeditor",
+			"title": "MonacoEditor",
+			"description": "Code editor that can be added to an application. It requires the monaco editor library (shipped with Open Edition)",
+			"package": {
+				"id": "90D564A2-96CA-EE11-85F9-000D3A663351"
+			}
+		}
+	],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}
