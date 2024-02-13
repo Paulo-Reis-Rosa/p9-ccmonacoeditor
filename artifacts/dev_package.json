@@ -16,7 +16,7 @@
 			"title": "MonacoEditor",
 			"description": "Code editor that can be added to an application. It requires the monaco editor library (shipped with Open Edition)",
 			"package": {
-				"id": "90D564A2-96CA-EE11-85F9-000D3A663351"
+				"id": "90d564a2-96ca-ee11-85f9-000d3a663351"
 			}
 		}
 	],
