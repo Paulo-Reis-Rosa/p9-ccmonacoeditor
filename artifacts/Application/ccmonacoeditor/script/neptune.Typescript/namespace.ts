@@ -9,6 +9,7 @@
  * functions from this namespace with myCustomComponent.foo()
  *
  */
+// var require={paths:{'vs':'/media/root/libraries/legacy/monaco/min/vs'}};
 namespace CustomComponent {
     console.log("Executing the namespace from ccmonacoeditor");
     const C_MATCH_VIEW_ID_PART = /^(__jsview\d*)--/;
@@ -62,6 +63,66 @@ namespace CustomComponent {
     });
     Content.setContent(`<div id='${Content.getId()}' style='width:100%; height:100%'></div>`);
 
+    function _initializeMonacoObjectAndEditor( pvPass, poResolveInit, poRejectInit ) {
+        if (isNaN(Number.parseInt(pvPass)) || Number.parseInt(pvPass) < 1 || Number.parseInt(pvPass) > 2) {
+            throw new Error(`monaco@${Content.getId()}' failed to initialize: max tries reached`);
+        }
+        //@ts-ignore
+        let loThisConfig = ccmonacoeditorConfig;
+        //@ts-ignore
+        if (typeof window.ccmonacoeditorRequire === "undefined") {window.ccmonacoeditorRequire = window.require}
+        //@ts-ignore
+        new Promise(resolve => ccmonacoeditorRequire(['vs/editor/editor.main'], resolve))
+            .then( monaco => {
+                console.log(`'monaco@${Content.getId()}' is creating the editor.`);
+                try {
+                    //@ts-ignore
+                    loData.oEditor = monaco.editor.create(Content.getDomRef(), loData.oMonacoOptions);
+                    poResolveInit(loData.oEditor);
+                    loData._oOnEditorCreatedOk(loData.oEditor);
+                }
+                catch (e) {
+                    poRejectInit(e);
+                    loData._oOnEditorCreatedError(e);
+                }
+            })
+            .catch( (e) => {
+                if (pvPass === 1) {
+                    // there may be a chance that the library did not load. Try to load it dynamically.
+                    //@ts-ignore
+                    let loWindowRequire = window.require;
+                    //@ts-ignore
+                    window.require = loThisConfig.loaderConfig;
+                    let loScriptElement = document.createElement('script');
+                    loScriptElement.setAttribute("src", loThisConfig.loader);
+                    loScriptElement.setAttribute("type", "text/javascript");
+                    loScriptElement.setAttribute("async", "false");
+                    // success event 
+                    loScriptElement.addEventListener("load", () => {
+                        //@ts-ignore
+                        window.ccmonacoeditorRequire = window.require;
+                        _initializeMonacoObjectAndEditor(2, poResolveInit, poRejectInit);
+                        //@ts-ignore
+                        window.require = loWindowRequire;
+                    });
+                    // error event
+                    loScriptElement.addEventListener("error", (ev) => {
+                        let lvErrorMessage = `monaco@${Content.getId()}' failed to initialize (dyn load): ${String(e)}`;
+                        console.warn(lvErrorMessage);
+                        poRejectInit(lvErrorMessage);
+                        loData._oOnEditorCreatedError(lvErrorMessage);
+                    });
+                    // Append script
+                    document.body.appendChild(loScriptElement);
+                    return;
+                }
+                let lvErrorMessage = `monaco@${Content.getId()}' failed to initialize (pass ${pvPass}): ${String(e)}`;
+                console.warn(lvErrorMessage);
+                poRejectInit(lvErrorMessage);
+                loData._oOnEditorCreatedError(lvErrorMessage);
+            });
+
+    }
     export function onLoad( ) { return loData.onLoad;}
     export function onEditorCreated( ) { return loData.onEditorCreated;}
 
@@ -75,27 +136,7 @@ namespace CustomComponent {
         return new Promise((resolveInit, rejectInit) => {
             loData.onLoad.then(() => {
                 console.log(`${loData.sId}: root rendering is done => creating the editor`);
-                //@ts-ignore
-                new Promise(resolve => require(['vs/editor/editor.main'], resolve))
-                    .then( monaco => {
-                        console.log(`'monaco@${Content.getId()}' is creating the editor.`);
-                        try {
-                            //@ts-ignore
-                            loData.oEditor = monaco.editor.create(Content.getDomRef(), loData.oMonacoOptions);
-                            resolveInit(loData.oEditor);
-                            loData._oOnEditorCreatedOk(loData.oEditor);
-                        }
-                        catch (e) {
-                            rejectInit(e);
-                            loData._oOnEditorCreatedError(e);
-                        }
-                    })
-                    .catch( (e) => {
-                        let lvErrorMessage = `monaco@${Content.getId()}' failed to initialize: ${String(e)}`;
-                        console.warn(lvErrorMessage);
-                        rejectInit(lvErrorMessage);
-                        loData._oOnEditorCreatedError(lvErrorMessage);
-                    });
+                _initializeMonacoObjectAndEditor(1, resolveInit, rejectInit);
             });
         });
     }

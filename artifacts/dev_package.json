@@ -14,10 +14,7 @@
 			"id": "1656bf26-e13a-ee11-b8f0-000d3a64eb39",
 			"application": "ccmonacoeditor",
 			"title": "MonacoEditor",
-			"description": "Code editor that can be added to an application. It requires the monaco editor library (shipped with Open Edition)",
-			"package": {
-				"id": "90d564a2-96ca-ee11-85f9-000d3a663351"
-			}
+			"description": "Code editor that can be added to an application. It requires the monaco editor library (shipped with Open Edition)"
 		}
 	],
 	"api": [],
@@ -45,6 +42,7 @@
 	"wf_definition": [],
 	"connector": [],
 	"events": [],
+	"media_library": [],
 	"code_snippets": [],
 	"wf_determination": [],
 	"wf_taskaction": []
